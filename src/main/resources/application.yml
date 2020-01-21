@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: http://49.233.86.230
