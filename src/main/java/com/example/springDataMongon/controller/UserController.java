@@ -1,5 +1,7 @@
 package com.example.springDataMongon.controller;
 
+import com.example.springDataMongon.service.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,5 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
 
+    @Autowired
+    BookService userService;
+
+
+    @RequestMapping("/getBook")
+    public String getBook() {
+        return userService.getBook();
+    }
 
 }

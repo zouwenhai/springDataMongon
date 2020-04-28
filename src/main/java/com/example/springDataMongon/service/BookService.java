@@ -1,6 +1,7 @@
 package com.example.springDataMongon.service;
 
-import com.example.springDataMongon.entity.User;
+
+import com.example.springDataMongon.entity.Book;
 
 /**
  * @author zouwenhai
@@ -8,8 +9,10 @@ import com.example.springDataMongon.entity.User;
  * @date 2020/4/27 14:55
  * @work //TODO
  */
-public interface UserService {
+public interface BookService {
 
 
-    public void saveUser(User user);
+    void saveBook(Book book);
+
+    String getBook();
 }
