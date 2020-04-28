@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class BookController {
 
 
     @Autowired
-    BookService userService;
+    BookService bookService;
 
 
     @RequestMapping("/getBook")
     public String getBook() {
-        return userService.getBook();
+        return bookService.getBook();
     }
 
 }
